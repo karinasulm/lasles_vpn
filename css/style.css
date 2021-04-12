@@ -1208,6 +1208,97 @@ body {
   font-size: 16px;
   margin: 20px 0 0 0;
 }
+.subscribe-window {
+  display: block;
+  background-color: rgba(79, 86, 101, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+}
+.subscribe-window.invisible {
+  display: none;
+}
+.subscribe-window__inner {
+  display: block;
+  position: fixed;
+  width: 600px;
+  height: 200px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #0b132a;
+  border: 2px solid #f53838;
+  left: 0;
+  right: 0;
+  top: calc(50vh - 100px);
+  margin: auto;
+  border-radius: 10px;
+}
+.subscribe-window__form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  position: relative;
+}
+.subscribe-window__item {
+  display: block;
+  width: 400px;
+  height: 30px;
+  font-size: 14px;
+}
+.subscribe-window__close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.subscribe-window__close::before,
+.subscribe-window__close::after {
+  display: block;
+  content: '';
+  background-color: #4f5665;
+  width: 25px;
+  height: 5px;
+}
+.subscribe-window__close::before {
+  transform: rotate(45deg) translate3d(5px, -1px, 0);
+}
+.subscribe-window__close::after {
+  transform: rotate(-45deg) translate3d(5px, 1px, 0);
+}
+.subscribe-window__item--label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe-window__input {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #4f5665;
+  outline: none;
+  color: #0b132a;
+}
+.subscribe-window__input:active,
+.subscribe-window__input:focus {
+  border: 2px solid #f53838;
+}
+.subscribe-window__item.btn {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+}
+.subscribe-window__item--link {
+  color: #4f5665;
+  text-decoration: none;
+}
+.subscribe-window__item--link:hover {
+  text-decoration: underline;
+}
 @media (max-width: 1140px) {
   .subscribe {
     flex-direction: column;
@@ -1228,6 +1319,22 @@ body {
   }
   .subscribe__item--btn {
     padding-bottom: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .subscribe-window__inner {
+    width: 310px;
+    height: 250px;
+  }
+  .subscribe-window__item {
+    width: 280px;
+  }
+  .subscribe-window__item--label {
+    flex-direction: column;
+    height: 60px;
+  }
+  .subscribe-window__input {
+    width: 100%;
   }
 }
 /* ---------- Social ---------- */
