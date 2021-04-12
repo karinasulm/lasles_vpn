@@ -64,13 +64,26 @@
     <div class="auth-window__inner auth-window__inner--up">
         <form id="auth" class="auth-window__form" action="">
             <div class="auth-window__item--close" id="close_up"></div>
-            <label for="auth-login">E-mail:</label>
-            <input class="auth-window__item auth-window__item--input" id="auth-login" type="email">
+            <label for="auth-email">E-mail:</label>
+            <input class="auth-window__item auth-window__item--input" id="auth-email" type="email">
             <label for="auth-password">Password:</label>
             <input class="auth-window__item auth-window__item--input" id="auth-password" type="password">
             <label for="auth-password">Confirm password:</label>
             <input class="auth-window__item auth-window__item--input" id="auth-password" type="password">
             <button class="auth-window__item btn">Sign Up</button>
+        </form>
+    </div>
+</section>
+
+<section class="subscribe-window invisible"  id="subscribe_window">
+    <div class="subscribe-window__inner">
+        <form id="subscribe" class="subscribe-window__form" action="">
+            <div class="subscribe-window__close" id="close_subscribe"></div>
+            <label class="subscribe-window__item subscribe-window__item--label"for="auth-email">
+                E-mail:
+                <input class="subscribe-window__input" id="auth-email" type="email">
+            </label>
+            <button class="subscribe-window__item btn">Subscribe</button>
         </form>
     </div>
 </section>
@@ -363,14 +376,14 @@
                     </p>
                 </div>
                 <div class="subscribe__item subscribe__item--btn">
-                    <a href="" class="subscribe__btn btn">Subscribe Now</a>
+                    <a href="#" class="subscribe__btn btn" id="subscribe_btn">Subscribe Now</a>
                 </div>
             </div>
 
         </div>
+
     </div>
 </section>
-
 
 <footer class="footer">
     <div class="wrapper">
