@@ -103,67 +103,85 @@ $(function() {
 
   });
 
-  // Form
+    // Form
 
-  $('#sign_in_button').on('click', function(event) {
+    $('#sign_in_button').on('click', function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    $('#sign_in_form').removeClass('invisible');
+      $('#sign_in_form').removeClass('invisible');
 
-  });
+    });
 
-  $('#close_in').on('click', function(event) {
+    $('#close_in').on('click', function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    $('#sign_in_form').addClass('invisible');
+      $('#sign_in_form').addClass('invisible');
 
-  });
+    });
 
-  $('#sign_up_button').on('click', function(event) {
+    $('#sign_up_button').on('click', function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    $('#sign_up_form').removeClass('invisible');
+      $('#sign_up_form').removeClass('invisible');
 
-  });
+    });
 
-  $('#close_up').on('click', function(event) {
+    $('#close_up').on('click', function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    $('#sign_up_form').addClass('invisible');
+      $('#sign_up_form').addClass('invisible');
 
-  });
+    });
 
-  // Box
+    // Box
 
-  $('#btn_free').on('click', function(event) {
+    $('#btn_free').on('click', function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    $('.box__item').removeClass('active');
-    $('#box_free').addClass('active');
+      $('.box__item').removeClass('active');
+      $('#box_free').addClass('active');
 
-  });
+    });
 
-  $('#btn_standart').on('click', function(event) {
+    $('#btn_standart').on('click', function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    $('.box__item').removeClass('active');
-    $('#box_standart').addClass('active');
+      $('.box__item').removeClass('active');
+      $('#box_standart').addClass('active');
 
-  });
+    });
 
-  $('#btn_premium').on('click', function(event) {
+    $('#btn_premium').on('click', function(event) {
 
-    event.preventDefault();
+      event.preventDefault();
 
-    $('.box__item').removeClass('active');
-    $('#box_premium').addClass('active');
+      $('.box__item').removeClass('active');
+      $('#box_premium').addClass('active');
 
-  });
+    });
+
+     // Subscribe
+
+     $('#subscribe_btn').on('click', function(event) {
+
+      event.preventDefault();
+
+      $('#subscribe_window').removeClass('invisible');
+
+    });
+
+    $('#close_subscribe').on('click', function(event) {
+
+      event.preventDefault();
+
+      $('#subscribe_window').addClass('invisible');
+
+    });
 
   });
